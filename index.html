@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lulla — Real calm. Right now.</title>
+<meta name="description" content="An anxiety relief app that matches the right calming technique to what your body is doing — in under 60 seconds. Built by a nurse. No login. Fully private.">
+<link rel="icon" type="image/png" href="assets/lulla-icon.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Lulla — Real calm. Right now.">
+<meta property="og:description" content="The anxiety app that matches the right technique to what your body is doing. Built by a nurse. No login required.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/lulla-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand" aria-label="Lulla home">
+      <svg class="nav-wave" viewBox="0 0 80 40" fill="none" aria-hidden="true">
+        <path d="M4 26 C18 26, 26 8, 46 8 C58 8, 62 30, 76 28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span class="nav-wordmark">Lulla</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#symptoms">Your body</a>
+      <a href="#science">The science</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a href="#get" class="btn btn-sm">Download</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="hero-eyebrow"><span class="dot"></span>Built by a nurse · No login required</span>
+      <h1>When anxiety hits,<br>your body knows<br><em>before you do.</em></h1>
+      <p class="hero-sub">Lulla reads what your body is doing — racing heart, can't breathe, spiraling thoughts — and gives you the one technique that actually works for it. In under 60 seconds. No account. Nothing leaves your phone.</p>
+      <div class="hero-cta">
+        <a href="#get" class="btn btn-app">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.05 12.04c-.03-2.6 2.13-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.33.86 1.24 1.89 2.64 3.23 2.59 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.39.81 1.4-.02 2.29-1.27 3.15-2.52.99-1.45 1.4-2.85 1.42-2.93-.03-.01-2.73-1.05-2.76-4.17M14.5 4.42c.72-.87 1.2-2.08 1.07-3.29-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.08 3.18 1.15.09 2.32-.58 3.03-1.45"/></svg>
+          Download on iPhone
+        </a>
+        <a href="#how" class="btn btn-ghost">See how it works</a>
+      </div>
+      <div class="hero-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/></svg>Fully on-device</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>Evidence-based</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-4.5-7-10a4.5 4.5 0 0 1 8.5-2A4.5 4.5 0 0 1 22 11c0 5.5-7 10-7 10Z" stroke-linejoin="round"/></svg>Free to start</span>
+      </div>
+    </div>
+
+    <div class="breath" aria-hidden="true">
+      <div class="breath-rings">
+        <div class="breath-ring r3"></div>
+        <div class="breath-ring r2"></div>
+        <div class="breath-ring r1"></div>
+      </div>
+      <div class="breath-core">
+        <svg class="wv" viewBox="0 0 80 40" fill="none"><path d="M4 26 C18 26, 26 8, 46 8 C58 8, 62 30, 76 28" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="breath-label" id="breathLabel">Breathe in</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust-strip">
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-item" data-reveal data-delay="1"><div class="num">60 sec</div><div class="lab">From open to calm</div></div>
+      <div class="trust-item" data-reveal data-delay="2"><div class="num">6</div><div class="lab">Symptom-matched paths</div></div>
+      <div class="trust-item" data-reveal data-delay="3"><div class="num">0</div><div class="lab">Accounts. Servers. Logins.</div></div>
+      <div class="trust-item" data-reveal data-delay="4"><div class="num">100%</div><div class="lab">On your device, always</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">How it works</span>
+      <h2>Three taps. Not thirty.</h2>
+      <p class="section-lead">Most anxiety apps hand you a library and wish you luck. Lulla asks one question — what's happening in your body — and takes it from there.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal data-delay="1">
+        <svg class="step-illu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-7-10a4.5 4.5 0 0 1 8.5-2A4.5 4.5 0 0 1 22 11c0 5.5-7 10-7 10Z"/></svg>
+        <div class="step-no">i</div>
+        <h3>Tell it what you feel</h3>
+        <p>Heart pounding? Can't catch your breath? Mind racing? Tap the sensation that's closest. No journaling, no explaining — just point at what's real right now.</p>
+      </div>
+      <div class="step" data-reveal data-delay="2">
+        <svg class="step-illu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div class="step-no">ii</div>
+        <h3>Get the matched technique</h3>
+        <p>A racing heart gets a long exhale. Hyperventilation gets box breathing. Dissociation gets stillness — never animation. The method fits the physiology, every time.</p>
+      </div>
+      <div class="step" data-reveal data-delay="3">
+        <svg class="step-illu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 12 4 4 5-7 4 6 5-9"/></svg>
+        <div class="step-no">iii</div>
+        <h3>It learns your patterns</h3>
+        <p>Tell it whether you feel better, the same, or worse. Over time Lulla finds your hardest hours, which technique works for <em>you</em>, and how sleep is feeding it all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SYMPTOM PICKER (interactive) ============ -->
+<section class="section sym-wrap" id="symptoms">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">The core idea · try it</span>
+      <h2>Anxiety isn't one thing.<br><em>So one fix never works.</em></h2>
+      <p class="section-lead">A pounding heart and a numb, floating feeling are opposite emergencies — and a generic breathing exercise can make the second one worse. Tap a symptom to see what Lulla would actually do.</p>
+    </div>
+    <div class="sym-layout">
+      <div class="sym-grid" role="group" aria-label="Pick a symptom">
+        <button class="sym-card active" data-sym="heart" aria-pressed="true">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a4.5 4.5 0 0 1 8.5-2A4.5 4.5 0 0 1 22 11c0 5.5-7 10-7 10Z" stroke-linejoin="round"/></svg>
+          <span class="l">Heart racing</span><span class="s">Chest tight or pounding</span>
+        </button>
+        <button class="sym-card" data-sym="breath" aria-pressed="false">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2-5 3 9 2-4h7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="l">Can't breathe</span><span class="s">Short or shallow breaths</span>
+        </button>
+        <button class="sym-card" data-sym="mind" aria-pressed="false">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0-6 6c0 4 6 12 6 12s6-8 6-12a6 6 0 0 0-6-6Z" stroke-linejoin="round"/><circle cx="12" cy="9" r="2"/></svg>
+          <span class="l">Mind won't stop</span><span class="s">Spiraling thoughts</span>
+        </button>
+        <button class="sym-card" data-sym="numb" aria-pressed="false">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01M15 9h.01M9 15h6" stroke-linecap="round"/></svg>
+          <span class="l">Numb or floating</span><span class="s">Things don't feel real</span>
+        </button>
+        <button class="sym-card" data-sym="shaky" aria-pressed="false">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke-linejoin="round"/></svg>
+          <span class="l">Shaky or restless</span><span class="s">Can't sit still</span>
+        </button>
+        <button class="sym-card" data-sym="overwhelmed" aria-pressed="false">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 15s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke-linecap="round"/></svg>
+          <span class="l">Overwhelmed</span><span class="s">Crying or shutting down</span>
+        </button>
+      </div>
+      <div class="sym-stage flash" id="symStage">
+        <span class="stage-tag">Vagus nerve activation</span>
+        <h3 class="stage-title">4-8 Breathing</h3>
+        <p class="stage-body">A long, slow exhale tells your nervous system the threat has passed. Twice the time breathing out as in — your heart rate follows the exhale down.</p>
+        <div class="stage-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>Matched the moment you tapped</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCIENCE SPLIT ============ -->
+<section class="section" id="science">
+  <div class="wrap">
+    <div class="feat-split">
+      <div class="feat-visual" data-reveal>
+        <div class="privacy-card" style="background:var(--terracotta);box-shadow:0 30px 70px rgba(196,113,74,.3)">
+          <div class="privacy-lock" style="background:rgba(255,255,255,.18);color:var(--cream)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 style="color:var(--cream)">Every technique has a reason.</h3>
+          <p style="color:rgba(250,243,234,.85)">These aren't wellness platitudes. They're the protocols clinicians actually reach for — and Lulla tells you why each one works, in a tap, while you're using it.</p>
+          <ul class="privacy-points">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="color:var(--cream)"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Box breathing — used by Navy SEALs to stay calm under fire</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="color:var(--cream)"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>4-7-8 breathing — paces the vagus nerve to slow the heart</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="color:var(--cream)"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>5-4-3-2-1 grounding — the clinical standard for spiraling</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="color:var(--cream)"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>CBT thought records &amp; progressive muscle relaxation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-content" data-reveal data-delay="1">
+        <span class="eyebrow">Clinical, not cold</span>
+        <h2 style="margin-bottom:6px">A nurse built this<br>at 3am, for 3am.</h2>
+        <div class="feat-list">
+          <div class="feat-item">
+            <div class="fi-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><h4>Reads your actual biometrics</h4><p>With Apple Health, Lulla turns your HRV, resting heart rate and sleep into a daily Readiness score — so you can see a hard day coming.</p></div>
+          </div>
+          <div class="feat-item">
+            <div class="fi-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><h4>Finds the pattern you can't see</h4><p>It quietly connects the dots — your hardest hours, the nights short sleep tips you over, the one technique that lands for you specifically.</p></div>
+          </div>
+          <div class="feat-item">
+            <div class="fi-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 22a8 8 0 1 0-8-8" /><path d="M8 14H3v5M12 8v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><h4>Prevention, not just rescue</h4><p>Seven guided practices for the calm days — box breathing, body scans, a worry jar — so the hard moments come less often.</p></div>
+          </div>
+          <div class="feat-item">
+            <div class="fi-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 11v6M19 14h6" stroke-linecap="round"/></svg></div>
+            <div><h4>A human before a hotline</h4><p>Your Safe Circle puts the people you trust one tap away — shown first, before crisis lines, when the worst moments hit.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRIVACY ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="feat-split flip">
+      <div class="feat-content" data-reveal>
+        <span class="eyebrow">Private by design</span>
+        <h2>The most personal data<br>you have. <em>It never leaves.</em></h2>
+        <p class="section-lead" style="margin-bottom:0">What you feel at your lowest shouldn't live on someone's server. Lulla has none. There's no account to make, no email to give, no cloud to trust — because there's nothing to send anywhere. It opens straight to help and works with the wifi off.</p>
+      </div>
+      <div class="feat-visual" data-reveal data-delay="1">
+        <div class="privacy-card">
+          <div class="privacy-lock">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>
+          </div>
+          <h3>No servers. No cloud. No catch.</h3>
+          <p>Lulla has no backend at all. Your check-ins, your patterns, your hardest nights — they're stored only on your phone, in your hands.</p>
+          <ul class="privacy-points">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>No login, no email, no account</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Works fully offline, every feature</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Nothing sold, shared, or tracked — ever</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE LIBRARY ============ -->
+<section class="section sym-wrap">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">For the calm days too</span>
+      <h2>Seven practices, always free.</h2>
+      <p class="section-lead">The full library is yours from day one — no paywall on the things that keep you steady.</p>
+    </div>
+    <div class="lib-grid">
+      <div class="lib-card" data-reveal data-delay="1"><span class="lib-tag">Quick reset</span><h4>Breathing Reset</h4><span class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>2 min · box breathing</span></div>
+      <div class="lib-card" data-reveal data-delay="1"><span class="lib-tag">Grounding</span><h4>3-2-1 Grounding</h4><span class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>1 min</span></div>
+      <div class="lib-card" data-reveal data-delay="2"><span class="lib-tag">Tonight</span><h4>Sleep Wind-Down</h4><span class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>5 min · body scan</span></div>
+      <div class="lib-card" data-reveal data-delay="2"><span class="lib-tag">Body reset</span><h4>Muscle Relaxation</h4><span class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>7 min · progressive</span></div>
+      <div class="lib-card" data-reveal data-delay="3"><span class="lib-tag">CBT</span><h4>Thought Record</h4><span class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>5 min</span></div>
+      <div class="lib-card" data-reveal data-delay="3"><span class="lib-tag">Ongoing</span><h4>Worry Jar</h4><span class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>Anytime</span></div>
+      <div class="lib-card" data-reveal data-delay="4"><span class="lib-tag">Calm fast</span><h4>4-7-8 Breathing</h4><span class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>3 min</span></div>
+      <div class="lib-card" data-reveal data-delay="4" style="background:var(--forest);border-color:var(--forest);color:var(--cream)"><span class="lib-tag" style="background:rgba(232,180,160,.16);color:var(--rose)">Always on</span><h4 style="color:var(--cream)">SOS, anytime</h4><span class="dur" style="color:rgba(250,243,234,.7)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.8"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/></svg>The crisis flow is free</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section price-wrap" id="pricing">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Pricing</span>
+      <h2>Free where it counts.<br><em>One price, forever, for the rest.</em></h2>
+      <p class="section-lead">No subscription. No trial countdown. The help is always free — and if the patterns help you, you unlock them once and keep them for good.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card" data-reveal data-delay="1">
+        <div class="price-name">Free</div>
+        <div class="price-amount">$0</div>
+        <div class="price-once" style="visibility:hidden">placeholder</div>
+        <p class="price-sub">Everything you need in the moment. Forever, no account.</p>
+        <ul class="price-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>The full SOS crisis flow, all 6 paths</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Daily check-ins &amp; mood tracking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>All 7 guided practices</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Your first pattern insight</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Apple Health Readiness score</li>
+        </ul>
+        <a href="#get" class="btn btn-ghost">Download free</a>
+      </div>
+      <div class="price-card feature" data-reveal data-delay="2">
+        <span class="price-badge">Lifetime</span>
+        <div class="price-name">Insights</div>
+        <div class="price-amount">$14.99 <span class="per">once</span></div>
+        <div class="price-once">Pay once. Yours forever. No subscription.</div>
+        <p class="price-sub">Unlock the full picture of what your anxiety is actually doing.</p>
+        <ul class="price-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Free, plus —</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>The complete pattern dashboard</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Which technique works best for you</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Sleep &amp; cycle correlations</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg>Monthly progress, written for you</li>
+        </ul>
+        <a href="#get" class="btn btn-light">Unlock lifetime insights</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final" id="get">
+  <svg class="final-wave" viewBox="0 0 80 40" fill="none" aria-hidden="true"><path d="M4 26 C18 26, 26 8, 46 8 C58 8, 62 30, 76 28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+  <div class="wrap">
+    <h2 data-reveal>The next hard moment<br>doesn't have to be <em>alone.</em></h2>
+    <p data-reveal data-delay="1">Download Lulla and have the right thing to do ready — before you need it. Free, private, and built by someone who's sat with people through it.</p>
+    <div class="hero-cta" data-reveal data-delay="2">
+      <a href="#" class="btn btn-app">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.05 12.04c-.03-2.6 2.13-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.33.86 1.24 1.89 2.64 3.23 2.59 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.39.81 1.4-.02 2.29-1.27 3.15-2.52.99-1.45 1.4-2.85 1.42-2.93-.03-.01-2.73-1.05-2.76-4.17M14.5 4.42c.72-.87 1.2-2.08 1.07-3.29-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.08 3.18 1.15.09 2.32-.58 3.03-1.45"/></svg>
+        Download on the App Store
+      </a>
+    </div>
+    <p class="final-note" data-reveal data-delay="3">Free to download · No account required · iOS 16+</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-crisis">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      <span><b>In crisis right now?</b> &nbsp;Call or text <b>988</b> (Suicide &amp; Crisis Lifeline) · Text <b>HOME</b> to <b>741741</b>. Free, 24/7.</span>
+    </div>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="fb-mark">
+          <svg class="nav-wave" viewBox="0 0 80 40" fill="none" aria-hidden="true"><path d="M4 26 C18 26, 26 8, 46 8 C58 8, 62 30, 76 28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+          <span class="nav-wordmark">Lulla</span>
+        </div>
+        <p>Real calm. Right now. An anxiety relief app that meets your body where it is — built by a registered nurse who got tired of watching people suffer through it alone.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="#how">How it works</a>
+          <a href="#symptoms">The 6 paths</a>
+          <a href="#science">The science</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#get">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr">2026</span> Lulla. Made with care, not data.</span>
+      <span>Lulla is a wellness tool, not a substitute for professional medical care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
